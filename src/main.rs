@@ -107,7 +107,7 @@ async fn main() {
             if is_key_pressed(KeyCode::S) && snake.direction != (0, -1) {
                 direction = (0, 1)
             }
-            if random == snake.head {
+            if random == snake.head || snake.body.iter().any(|&y| y == random) {
                 random = (rand::gen_range(0, GRID_SIZE), rand::gen_range(0, GRID_SIZE));
                 grow_next = true;
                 score += 1;
@@ -115,7 +115,7 @@ async fn main() {
 
             timer += get_frame_time();
 
-            if timer >= 0.2 {
+            if timer >= 0.05 {
                 if grow_next {
                     snake.grow_snake(&direction);
                     grow_next = false;
