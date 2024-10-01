@@ -144,6 +144,13 @@ async fn main() {
             );
         } else {
             draw_text(
+                &format!("Score: {}", score),
+                PIXEL as f32 * GRID_SIZE as f32 / 2.0 - PIXEL as f32 * 3.0,
+                PIXEL as f32 * GRID_SIZE as f32 / 2.0 - PIXEL as f32,
+                PIXEL as f32 * 2.0,
+                WHITE,
+            );
+            draw_text(
                 "PRESS (R) TO RESTART",
                 PIXEL as f32 * GRID_SIZE as f32 / 2.0 - PIXEL as f32 * 4.0,
                 PIXEL as f32 * GRID_SIZE as f32 / 2.0,
