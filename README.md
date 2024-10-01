@@ -14,6 +14,6 @@ git clone https://github.com/North004/SnakeRust.git
 ```bash
 cd SnakeRust
 cargo build --release
-mv target/release/snake /path/to/keep/the/game
-
+mv target/release/snake ~/SnakeGame/  ## Change location depending on your prefereance
+cd ../
 
