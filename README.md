@@ -2,8 +2,8 @@
 **The classic snake game but on rust** 
 
 ## Table of Contents
- - [Installation](#installation)
- - [Use](#use)
+ - **[Installation](#installation)**
+ - **[Use](#use)**
 
 # 🚀 Installation 🚀
 **Clone the gihub repo** 
