@@ -1,5 +1,5 @@
 # 🐍🐍 SNAKE 30 MINUTE RUST GAME 🐍🐍
-** The classic snake game but on rust :( **
+* The classic snake game but on rust :( *
 
 ## Table of Contents
  - [Installation](#installation)
